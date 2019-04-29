@@ -10,6 +10,11 @@ import warnings
 
 from glob import glob
 
+
+"""
+This file contains only the needed logic, and classes from the Hofer et al paper that we will be needing.
+"""
+
 class UpperDiagonalThresholdedLogTransform:
     def __init__(self, nu):
         self.b_1 = (torch.Tensor([1, 1]) / np.sqrt(2))
